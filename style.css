@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    flex-flow: column;
+    background-image: url('fotos/pexels-photo-248515.png');
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.header-container h1 {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.header-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.header-content a {
+    display: flex;
+
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #666;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 1rem;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 1.4rem 2.5rem;
+    transition: transform 0.5s, border 0.6s;
+}
+
+.header-content a:hover {
+    background-color: #EAEAEA;
+    color: #333;
+    border: 1px solid #333;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.700);
+    transition: background 0.5s, border 0.6s;
+}
+
+.apresentation-container {
+    background-color: #EAEAEA;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.apresentation-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.apresentation-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.apresentation-content p {
+    margin: 2rem;
+}
+
+.services-container {
+    background-color: #333;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height: 560px;
+}
+
+.service-card {
+    background-color: #fff;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    margin: 3rem 0.7rem;
+
+}
+
+.service-card img {
+    background-color: #fff;
+    /* margin: 2rem; */
+    width: 260px;
+}
+
+.service-card .card-content {
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+    width: 250px;
+}
+
+.service-card .card-content h1 {
+    color: #333;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.service-card .card-content p {
+    color: #666;
+    text-align: center;
+    padding: 2rem;
+}
+
+.description-container {
+    text-align: center;
+    padding-top: 4rem
+}
+
+.description-container h1,
+.description-container p {
+    padding: 1.5rem;
+    color: #333;
+}
+
+.description-card {
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+    color: #fff;
+}
+
+.description-card p {
+    padding: 1rem;
+    color: #fff;
+}
+
+.description-card h2 {
+    font-size: 1.5rem;
+    padding: 2.2rem 2rem;
+}
+
+
+.description-card .card-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    color: #fff;
+}
+
+.description-card #card-content-1 {
+    background-color: #2690D4;
+}
+
+.description-card #card-content-2 {
+    background-color: #333;
+}
+
+
+.footer {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #2690D4;
+}
+
+
+
+
+ @media screen and (max-width: 824px) {
+    .header-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .apresentation-content {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    .apresentation-content p {
+        margin: 2rem;
+        background-color: #666;
+        color: #fff;
+    }
+
+    .services-container {
+        display: flex;
+        flex-flow: column;
+        height: 1750px;
+        align-items: center;
+    }
+
+    .service-card img {
+        background-color: #fff;
+        width: 280px;
+    }
+
+    .service-card {
+        background-color: #fff;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+
+
+    .description-card {
+        display: block;
+    }
+}    
